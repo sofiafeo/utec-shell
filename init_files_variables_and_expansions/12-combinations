@@ -1,0 +1,4 @@
+cat > init_files_variables_and_expansions/12-combinations << 'EOF'
+#!/bin/bash
+echo {a..z}{a..z} | tr ' ' '\n' | grep -v '^oo$'
+EOF
